@@ -202,16 +202,12 @@ body {
     font-weight: 400;
 }
 
-.wrapper-services {
+.service-item-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 400px;
 }
 
-.reverse-services {
-    flex-direction: row-reverse;
-}
 /* Advantage */
 .advantage {
     text-align: center;
