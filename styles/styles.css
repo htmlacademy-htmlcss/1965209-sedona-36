@@ -125,6 +125,9 @@ body {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
 }
 
 .trigger-description {
@@ -202,11 +205,12 @@ body {
     font-weight: 400;
 }
 
-.service-item-wrapper {
+.services-item-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 
 /* Advantage */
 .advantage {
