@@ -4,37 +4,48 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon/favicon.png">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="page-header-container">
-    <a href="#" class="navigation-logo">
-      <img src="images/logo.svg" alt="Логотип" class="logo" width="140" height="70">
-    </a>
-    <nav class="header-navigation">
-      <ul class="navigation-list">
-        <li class="navigation-item"><a href="#" class="navigation-link current">Главная</a></li>
-        <li class="navigation-item"><a href="#" class="navigation-link">О Cедоне</a></li>
-        <li class="navigation-item"><a href="catalog.html" class="navigation-link">Гостиницы</a></li>
-      </ul>
-    </nav>
-    <ul class="navigation-list navigation-user">
-      <li class="navigation-user-icon">
-        <a href="#" class="navigation-link"><span class="visually-hidden">Поиск</span></a>
-      </li>
-      <li class="navigation-user-icon">
-        <a href="#" class="navigation-icon"><span class="visually-hidden">Избранное</span>
-        <p class="favorites-number">12</p>
+  <div class="wrapper-body">
+
+    <header class="page-header">
+      <a class="logo-container">
+        <img class="header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
       </a>
-      </li>
-      <li class="button-header-container">
-        <a href="#" class="button-navigation-link">Хочу сюда!</a>
-      </li>
-    </ul>
-    </div>
-  </header>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-user-icon">
+          <a class="navigation-icon search-icon" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="navigation-user-icon ">
+          <a class="navigation-icon favorite-icon" href="#">
+            <span class="visually-hidden">Избранное</span>
+            <span class="favorite-text">12</span>
+          </a>
+        </li>
+      </ul>
+      <div class="button-header-container">
+        <a class="button header-link-button" href="#">Хочу сюда!</a>
+      </div>
+    </header>
   <main class="main-iner">
     <div class="page-main-container">
     <section class="welcome">
@@ -83,52 +94,44 @@
 
     </section>
 
-    <section class="advantage">
-      <div class="advnatage-header-container">
-      <h2 class="visually-hidden">Преимущество</h2>
-      <p class="trigger">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-      <p class="trigger-description">Опытный персонал и качественное обслуживание!</p>
-      
-      <ul class="advantage-list">
-        <li class="advantage-item">
-          <span class="visually-hidden">Жильё</span>
-          <h3 class="advantage-title">Жильё</h3>
-          <p class="advantage-description">Рекомендуем пожить в настоящем мотеле,
-            всё как в кино!</p>
-        </li>
-        <li class="advantage-item">
-          <span class="visually-hidden">Еда</span>
-          <h3 class="advantage-title">Еда</h3>
-          <p class="advantage-description">Всегда заказывайте
-            топовый фирменный бургер, вы не разочаруетесь!</p>
-        </li>
-        <li class="advantage-item">
-          <span class="visually-hidden">Сувениры</span>
-          <h3 class="advantage-title">Сувениры</h3>
-          <p class="advantage-description">Не только китайского,
-            но и настоящего местного производства!</p>
-        </li>
-      </ul>
-      </div>
-    </section>
+    <ul class="advantages-list">
+      <li class="advantages-item background-light-gray house-icon">
+        <h3 class="advantages-heading">Жильё</h3>
+        <p class="advantages-text">Рекомендуем пожить<br> в настоящем мотеле,<br>
+          всё как в кино!</p>
+      </li>
+      <li class="advantages-item background-white burger-icon">
+        <h3 class="advantages-heading">Еда</h3>
+        <p class="advantages-text">Всегда заказывайте<br> топовый фирменный бургер,<br>
+          вы не разочаруетесь!</p>
+      </li>
+      <li class="advantages-item background-light-gray souvenir-icon">
+        <h3 class="advantages-heading">Сувениры</h3>
+        <p class="advantages-text">Не только китайского,<br> но и настоящего
+          местного<br>производства!</p>
+      </li>
+    </ul>
+  </section>
 
-    <section class="hotel-search">
-      <h2 class="visually-hidden">Поиск гостиницы</h2>
-      <p class="trigger">Заинтересовались?</p>
-      <p class="trigger-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие
-        предложения гостиниц в Седоне</p>
-      <a href="catalog.html" class="hotel-search-button">Поиск гостиницы в Седоне</a>
-    </section>
-    
-    <section class="subscribe">
-      <h2 class="trigger-white trigger">Подпишитесь на рассылку</h2>
-      <p class="trigger-description-white">Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form action="#" class="subscribe-form">
-        <label for="subscribe-email" class="visually-hidden">Email</label>
-        <input type="text" placeholder="Ваш e-mail" class="subscribe-form-email" id="subscribe-email" name="email">
-        <button class="subscribe-button" type="submit">Подписаться</button>
-      </form>
-    </section>
+  <section class="search">
+    <h2 class="search-heading">Заинтересовались?</h2>
+    <p class="search-text">Укажите предполагаемые даты поездки,<br>
+      и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    <a class="button search-button" href="#openModal">ПОИСК ГОСТИНИЦЫ В седоне</a>
+  </section>
+
+  <section class="subscribe">
+    <h2 class="subscribe-heading">Подпишитесь на рассылку</h2>
+    <p class="subscribe-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+    <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+      <label for="subscribe-email" class="visually-hidden">Ваш e-mail</label>
+      <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email"
+        required>
+      <button class="button subscribe-button" type="submit">
+        <span class="subscribe-button-text">Подписаться</span>
+      </button>
+    </form>
+  </section>
     </div>
   </main>
 
